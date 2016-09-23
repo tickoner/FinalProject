@@ -22,7 +22,7 @@
 @MainFontBolt: 'Montserrat Bold';
 
 body {
-    background-color: @body-bg;
+    background-color: transparent;
 }
 
 div#header {
@@ -113,6 +113,11 @@ div#header {
         }
     }
 }
+.main-navigate {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
 #logo {
   padding-top: 25px;
   padding-left: 0;
@@ -146,5 +151,51 @@ li.dropdown {
     box-shadow: none;
     text-align: left;
   }
+  a.dropdown-toggle {
+    padding-right: 0;
+  }
 
+}
+button.navbar-toggle.collapsed {
+  background-color: grey;
+}
+#navigator {
+  padding-top: 13px;
+}
+
+span.glyphicon.glyphicon-menu-down {
+  color: @nav-letters-color;
+  padding-left: 10px;
+  margin-right: 25px;
+  padding-right: 0;
+}
+
+ul.right-nav {
+  padding-top: 25px;
+  a {
+    padding: 0 12px;
+    border-right: 1px solid @topMenuColorElements;
+    margin-bottom: 15px;
+  }
+  & li:last-child {
+    a {
+      border-right: none;
+    }
+  }
+}
+.container-fluid {
+  padding: 0;
+}
+.carousel-inner {
+  .item {
+    img {
+      width: 100%
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-navigate {
+    position: static;
+  }
 }
