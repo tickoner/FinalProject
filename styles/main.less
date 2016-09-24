@@ -113,6 +113,7 @@ div#header {
         }
     }
 }
+
 .main-navigate {
   position: absolute;
   z-index: 10;
@@ -123,6 +124,7 @@ div#header {
   padding-left: 0;
   padding-right: 100px;
 }
+
 li.dropdown {
   font-family: @MainFontBolt;
   text-transform: uppercase;
@@ -157,11 +159,18 @@ li.dropdown {
 
 }
 button.navbar-toggle.collapsed {
-  background-color: grey;
+  background-color: (@topMenuColorElements);
 }
 #navigator {
   padding-top: 13px;
+  li.dropdown.open {
+    a {
+      background-color: transparent;
+    }
+  }
 }
+
+
 
 span.glyphicon.glyphicon-menu-down {
   color: @nav-letters-color;
@@ -169,18 +178,24 @@ span.glyphicon.glyphicon-menu-down {
   margin-right: 25px;
   padding-right: 0;
 }
-
 ul.right-nav {
+
   padding-top: 25px;
   a {
     padding: 0 12px;
     border-right: 1px solid @topMenuColorElements;
     margin-bottom: 15px;
+    &:hover, &:visited, &:active, &:focus {
+      background: none;
+    }
   }
   & li:last-child {
     a {
       border-right: none;
     }
+  }
+  li {
+    background: transparent;
   }
 }
 .container-fluid {
@@ -193,9 +208,75 @@ ul.right-nav {
     }
   }
 }
+div#carousel-example-generic{
+  a.carousel-control {
+    span.glyphicon {
+      position: absolute;
+      top: 50%;
+    }
+    span.glyphicon.glyphicon-menu-left {
+      left: 40px;
+    }
+    span.glyphicon.glyphicon-menu-right {
+      right: 40px;
+    }
+  }
+}
 
+span.icon-bar {
+  background: @topMenuColorBg;
+  }
+button.navbar-toggle {
+  background: @nav-rose;
+}
+//for mobile devices
 @media (max-width: 768px) {
+  #navigator {
+    padding-top: 1px;
+  }
+  #logo {
+    padding-top: 17px;
+  }
   .main-navigate {
     position: static;
+    background: @topMenuColorBg;
+    color: @topMenuColorElements;
+    margin-bottom: 0;
+  }
+  li.dropdown.open>a.dropdown-toggle {
+    background: lighten((@topMenuColorBg),30%);
+  }
+  li.dropdown>a.dropdown-toggle {
+    padding-left: 15px;
+  }
+  .navbar-brand {
+    margin-left: 15px;
+
+    }
+  .right-nav {
+      li>a {
+        &:hover {
+          background: lighten((@topMenuColorBg),30%);
+        }
+      margin-bottom: 0;
+      padding-top: 7.5px;
+      padding-bottom: 7.5px;
+      padding-left: 15px;
+      }
+  }
+  ul.right-nav {
+    padding-top: 0;
+  }
+  div#header div.container div.social-icons {
+    display: block;
+}
+  div#header div.container div.authorization {
+      display: inline-block;
+      float: left !important;
+  }
+}
+@media (min-width: 768px) {
+  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0;
   }
 }
