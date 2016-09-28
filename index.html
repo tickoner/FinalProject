@@ -168,7 +168,6 @@
                 <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="2"></li>
               </ol> -->
-
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
@@ -560,14 +559,28 @@
     </div>
     <div id="subscribe">
         <div class="container-fluid">
-            <div class="container">
-                <form class="form-inline">
+            <div class="container subscribe-form">
+              <form class="form-inline">
+                <div class="row">
+                  <!-- <div class="form-group"> -->
+                  <div class="col-md-7">
                     <div class="form-group">
-                        <label for="exampleInputEmail2" id="label-search-down">Subscribe to our newsletter</label>
-                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="email adress">
+                      <label for="exampleInputEmail2" id="label-search-down">Subscribe to our newsletter</label>
                     </div>
-                    <button type="submit" class="btn btn-default" id="search-down-btn">subscribe</button>
-                </form>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="email adress">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-default" id="search-down-btn">subscribe</button>
+                    </div>
+                  </div>
+                  <!-- </div> -->
+                </div>
+              </form>
             </div>
         </div>
     </div>
@@ -576,194 +589,273 @@
             <div class="container">
                 <!--footer accordion-->
                 <div class="col-xs-12 col-md-3">
-                    <h3 class="footer-up-head">pages widget</h3>
+                    <div class="row">
+                        <div class="pages-widget">
+                            <h3 class="footer-up-head">pages widget</h3>
 
-                    <div class="demo">
-                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="demo">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingOne">
-                                    <h4 class="panel-title">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
                             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                               <i class="more-less glyphicon glyphicon-plus"></i>
                               home
                             </a>
                           </h4>
-                                </div>
-                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                    <div class="panel-body">
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                            </div>
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><a href="#">Cras justo odio</a></li>
+                                                <li class="list-group-item"><a href="#">Dapibus ac faci</a></li>
+                                                <li class="list-group-item"><a href="#">Morbi leo risus</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><a href="#">Cras justo odio</a></li>
-                                        <li class="list-group-item"><a href="#">Dapibus ac faci</a></li>
-                                        <li class="list-group-item"><a href="#">Morbi leo risus</a></li>
-                                    </ul>
-                                </div>
-                            </div>
 
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingTwo">
-                                    <h4 class="panel-title">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                           <i class="more-less glyphicon glyphicon-plus"></i>
                            pages
                         </a>
                       </h4>
-                                </div>
-                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                    <div class="panel-body">
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                            </div>
+
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><a href="#">Cras justo odio</a></li>
+                                                <li class="list-group-item"><a href="#">Dapibus ac faci</a></li>
+                                                <li class="list-group-item"><a href="#">Morbi leo risus</a></li>
+                                            </ul>
+
+                                        </div>
                                     </div>
 
-                                    <ul class="list-group">
-                                      <li class="list-group-item"><a href="#">Cras justo odio</a></li>
-                                      <li class="list-group-item"><a href="#">Dapibus ac faci</a></li>
-                                      <li class="list-group-item"><a href="#">Morbi leo risus</a></li>
-                                    </ul>
-
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingThree">
-                                    <h4 class="panel-title">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                           <i class="more-less glyphicon glyphicon-plus"></i>
                             portfolio
                         </a>
                       </h4>
-                                </div>
-                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                    <div class="panel-body">
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                            </div>
+
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><a href="#">Cras justo odio</a></li>
+                                                <li class="list-group-item"><a href="#">Dapibus ac faci</a></li>
+                                                <li class="list-group-item"><a href="#">Morbi leo risus</a></li>
+                                            </ul>
+
+                                        </div>
                                     </div>
 
-                                    <ul class="list-group">
-                                      <li class="list-group-item"><a href="#">Cras justo odio</a></li>
-                                      <li class="list-group-item"><a href="#">Dapibus ac faci</a></li>
-                                      <li class="list-group-item"><a href="#">Morbi leo risus</a></li>
-                                    </ul>
-
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFour">
-                                    <h4 class="panel-title">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingFour">
+                                            <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
                           <i class="more-less glyphicon glyphicon-plus"></i>
                             blog
                         </a>
                       </h4>
-                                </div>
-                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                    <div class="panel-body">
+                                        </div>
+                                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                            <div class="panel-body">
+                                            </div>
+
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><a href="#">Cras justo odio</a></li>
+                                                <li class="list-group-item"><a href="#">Dapibus ac faci</a></li>
+                                                <li class="list-group-item"><a href="#">Morbi leo risus</a></li>
+                                            </ul>
+
+                                        </div>
                                     </div>
 
-                                    <ul class="list-group">
-                                      <li class="list-group-item"><a href="#">Cras justo odio</a></li>
-                                      <li class="list-group-item"><a href="#">Dapibus ac faci</a></li>
-                                      <li class="list-group-item"><a href="#">Morbi leo risus</a></li>
-                                    </ul>
-
-                                </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFive">
-                                    <h4 class="panel-title">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingFive">
+                                            <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
                           <i class="more-less glyphicon glyphicon-plus"></i>
                             shop
                         </a>
                       </h4>
-                                </div>
-                                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                                    <div class="panel-body">
+                                        </div>
+                                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                            <div class="panel-body">
+                                            </div>
+
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><a href="#">Cras justo odio</a></li>
+                                                <li class="list-group-item"><a href="#">Dapibus ac faci</a></li>
+                                                <li class="list-group-item"><a href="#">Morbi leo risus</a></li>
+                                            </ul>
+
+                                        </div>
                                     </div>
 
-                                    <ul class="list-group">
-                                      <li class="list-group-item"><a href="#">Cras justo odio</a></li>
-                                      <li class="list-group-item"><a href="#">Dapibus ac faci</a></li>
-                                      <li class="list-group-item"><a href="#">Morbi leo risus</a></li>
-                                    </ul>
-
                                 </div>
+                                <!-- panel-group -->
                             </div>
-
+                            <!-- container -->
                         </div>
-                        <!-- panel-group -->
                     </div>
-                    <!-- container -->
-
+                    <!-- end of pages-widget -->
                 </div>
                 <!--end of footer accordion-->
                 <div class="col-xs-12 col-md-3">
-                    <h3 class="footer-up-head">twitter widget</h3>
-                      <div class="media twitter-messages">
-                        <div class="media-left">
-                          <a href="#">
-                            <img class="media-object" src="img/footer_img/social/twit.png" alt="twitter">
-                          </a>
-                        </div>
-                        <div class="media-body">
-                          <h4 class="media-heading"><a href="#">@PASCO, Duis commodo elit sed nisi molestie</a></h4>
+                    <div class="row">
+                        <!-- twitter-widget -->
+                        <div class="twitter-widget">
 
-                        </div>
-                        <ul class="twitter-messages-down">
-                          <li><p>2 hours ago</p></li>
-                          <li><span>&#8594;</span></li>
-                          <li><a href="#">reply</a></li>
-                          <li><a href="#">retweet</a></li>
-                          <li><a href="#">favorite</a></li>
-                        </ul>
-                      </div>
+                            <h3 class="footer-up-head">twitter widget</h3>
+                            <div class="media twitter-messages">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="img/footer_img/social/twit.png" alt="twitter">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="#">@PASCO, Duis commodo elit sed nisi molestie</a></h4>
 
-                      <div class="media twitter-messages">
-                        <div class="media-left">
-                          <a href="#">
-                            <img class="media-object" src="img/footer_img/social/twit.png" alt="twitter">
-                          </a>
-                        </div>
-                        <div class="media-body">
-                          <h4 class="media-heading"><a href="#">@PASCO, Duis commodo elit sed nisi molestie</a></h4>
+                                </div>
+                                <ul class="twitter-messages-down">
+                                    <li>
+                                        <p>2 hours ago</p>
+                                    </li>
+                                    <li><span>&#8594;</span></li>
+                                    <li><a href="#">reply</a></li>
+                                    <li><a href="#">retweet</a></li>
+                                    <li><a href="#">favorite</a></li>
+                                </ul>
+                            </div>
 
-                        </div>
-                        <ul class="twitter-messages-down">
-                          <li><p>2 hours ago</p></li>
-                          <li><span>&#8594;</span></li>
-                          <li><a href="#">reply</a></li>
-                          <li><a href="#">retweet</a></li>
-                          <li><a href="#">favorite</a></li>
-                        </ul>
-                      </div>
+                            <div class="media twitter-messages">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="img/footer_img/social/twit.png" alt="twitter">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="#">@PASCO, Duis commodo elit sed nisi molestie</a></h4>
 
-                      <div class="media twitter-messages">
-                        <div class="media-left">
-                          <a href="#">
-                            <img class="media-object" src="img/footer_img/social/twit.png" alt="twitter">
-                          </a>
-                        </div>
-                        <div class="media-body">
-                          <h4 class="media-heading"><a href="#">@PASCO, Duis commodo elit sed nisi molestie</a></h4>
+                                </div>
+                                <ul class="twitter-messages-down">
+                                    <li>
+                                        <p>2 hours ago</p>
+                                    </li>
+                                    <li><span>&#8594;</span></li>
+                                    <li><a href="#">reply</a></li>
+                                    <li><a href="#">retweet</a></li>
+                                    <li><a href="#">favorite</a></li>
+                                </ul>
+                            </div>
 
+                            <div class="media twitter-messages">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="img/footer_img/social/twit.png" alt="twitter">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="#">@PASCO, Duis commodo elit sed nisi molestie</a></h4>
+
+                                </div>
+                                <ul class="twitter-messages-down">
+                                    <li>
+                                        <p>2 hours ago</p>
+                                    </li>
+                                    <li><span>&#8594;</span></li>
+                                    <li><a href="#">reply</a></li>
+                                    <li><a href="#">retweet</a></li>
+                                    <li><a href="#">favorite</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <ul class="twitter-messages-down">
-                          <li><p>2 hours ago</p></li>
-                          <li><span>&#8594;</span></li>
-                          <li><a href="#">reply</a></li>
-                          <li><a href="#">retweet</a></li>
-                          <li><a href="#">favorite</a></li>
-                        </ul>
-                      </div>
+                        <!--end of twitter-widget -->
+                    </div>
+                    <div class="row">
+                        <div class="social-widget">
+                            <h3 class="footer-up-head">social widget</h3>
+                            <ul class="social-widget-icons">
+                                <li>
+                                    <a href="#"><img src="/img/footer_img/social/social-widget/facebook.png" alt="facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="/img/footer_img/social/social-widget/twitter.png" alt="twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="/img/footer_img/social/social-widget/vk.png" alt="vk"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="/img/footer_img/social/social-widget/pinterest.png" alt="pinterest"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="/img/footer_img/social/social-widget/tumblr.png" alt="tumblr"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="/img/footer_img/social/social-widget/dribbble.png" alt="dribbble"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="col-xs-12 col-md-3">
-                    <h3 class="footer-up-head">flickr widget</h3>
+                    <div class="row">
+                        <div class="flickr-widget">
+                            <h3 class="footer-up-head">flickr widget</h3>
+                        </div>
+                    </div>
+
 
                 </div>
 
                 <div class="col-xs-12 col-md-3">
-                    <h3 class="footer-up-head">news letter</h3>
-
+                    <div class="row">
+                        <div class="news-letter-widget">
+                            <h3 class="footer-up-head">news letter</h3>
+                            <form class="form-horizontal">
+                              <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-10">
+                                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                                <div class="col-sm-10">
+                                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                  <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox"> Remember me
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Sign in</button>
+                                </div>
+                                      </div>
+                                    </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
