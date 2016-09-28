@@ -708,8 +708,10 @@ div#gallery {
 
 div#subscribe {
   div.container-fluid {
-    height: 200px;
-    background-image: url('/img/footer_img/search-bg.png');
+    padding-bottom: 80px;
+    // height: 200px;
+    background: url('/img/footer_img/search-bg.png');
+    background-size: cover;
     background-color: @text-black;
     .form-inline {
       .form-group {
@@ -836,7 +838,44 @@ button#search-down-btn {
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
     border-top-color: #EEEEEE;
 }
+//social messages
 
+div.media.twitter-messages {
+  padding-bottom: 14px;
+  border-bottom: 1px solid @topMenuColorElements;
+  div.media-body {
+    h4.media-heading {
+      a {
+        font-family: @MainFontBlog;
+        font-size: 13px;
+        color: lighten(@topMenuColorElements, 20%);
+        padding-top: 0;
+      }
+
+    }
+  }
+  ul.twitter-messages-down {
+    padding-left: 0;
+    margin-bottom: 0;
+
+    li {
+      display: inline-block;
+      float: left;
+      padding-right: 5px;
+      list-style: none;
+      font-family: @MainFontBlog;
+      font-size: 12px;
+      color: @topMenuColorElements;
+      p {
+        margin-bottom: 0;
+      }
+      a {
+        text-decoration: underline;
+        color:  @topMenuColorElements;
+      }
+    }
+  }
+}
 
 //for mobile devices
 @media (max-width: 768px) {
