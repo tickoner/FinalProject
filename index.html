@@ -515,13 +515,13 @@
                         </div>
                         <!-- end of bigger thumbnails -->
                         <!-- pagination of blog -->
-                        <div class="row">
-                            <div class="container">
+                       <div class="container">
+                           <div class="row">
                                 <div class="col-xs-12 col-md-8 footer-button">
                                     <ul class="pager">
                                         <li class="next">
 
-                                            <a href="#"><span aria-hidden="true" class="glyphicon glyphicon-arrow-right"></span><span class="footer-button-more">More</span></a>
+                                            <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></span><span class="footer-button-more">More</span></a>
 
                                         </li>
                                     </ul>
@@ -532,11 +532,174 @@
                         <!--end of pagination of blog -->
                     </div>
                     <!-- end of <div class="col-sm-9">-->
+                  <!-- SIDEABR -->
+                    <div class="col-md-3 col-xs-12">
+                      <div id="sidebar">
+                      <!-- sidebar search -->
+                      <form id="sidebar-search-form" class="form-inline" role="form" method="post" action="//www.google.com/search" target="_blank">
+                          <div class="input-group">
+                              <input type="text" class="form-control sidebar-search-form" id="sidebar-search-input"placeholder="Search">
+                              <span class="input-group-btn"><button type="submit" class="btn sidebar-search-btn" data-target="#search-form" name="q"><i class="fa fa-search"></i>
+                              </button></span>
+                            </div>
+                      </form>
+                      <!-- end of sidebar-search -->
+                      <!-- sidebar-categories -->
+                      <div class="sidebar-categories">
+                        <h3 class="sidebar-heading">categories</h3>
+                        <hr class="sidebar-hr">
+                            <table class="table table-condensed sidebar-categories-list">
+                                 <tr>
+                                   <td><a href="#">Photography</a></td>
+                                   <td class="right-text-table"><p>195</p></td>
+                                 </tr>
+                                 <tr>
+                                   <td><a href="#">Illustration</a></td>
+                                   <td class="right-text-table"><p>15</p></td>
+                                 </tr>
+                                 <tr>
+                                   <td><a href="#">Graphic Design</a></td>
+                                   <td class="right-text-table"><p>36</p></td>
+                                 </tr>
+                                 <tr>
+                                   <td><a href="#">Web Design</a></td>
+                                   <td class="right-text-table"><p>220</p></td>
+                                 </tr>
+                                 <tr>
+                                   <td><a href="#">Videography</a></td>
+                                   <td class="right-text-table"><p>17</p></td>
+                                 </tr>
+                            </table>
+                        </div>
+                        <!-- end of sidebar-categories -->
+                        <!-- sidebar subscribe -->
+                        <div class="sidebar-subscribe">
+                            <h3 class="sidebar-heading">subscribe</h3>
+                            <hr class="sidebar-hr">
+                            <form class="form-horizontal sidebar-subscribe-form">
+                                <div class="form-group">
+                                    <label for="inputName-sidebar" class="col-sm-2 control-label">Name</label>
+                                    <div class="col-xs-12">
+                                        <input type="text" class="form-control" id="inputName-sidebar" placeholder="Mykola">
+                                    </div>
+                                </div>
 
-                    <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="inputEmail-sidebar" class="col-sm-2 control-label">Email</label>
+                                    <div class="col-xs-12">
+                                        <input type="email" class="form-control" id="inputEmail-sidebar" placeholder="email@address.com">
+                                    </div>
+                                </div>
 
-                        SIDEBAR SIDEBAR SIDEBAR SIDEBAR
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <button type="submit" class="btn btn-default" id="subscribe-btn-sidebar">subscribe</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- end of sidebar subscribe -->
+                        <!-- social-widget icons sidebar -->
+                        <ul class="social-widget-icons">
+                            <li>
+                                <a href="#"><img src="/img/footer_img/social/social-widget/facebook.png" alt="facebook"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/img/footer_img/social/social-widget/twitter.png" alt="twitter"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/img/footer_img/social/social-widget/vk.png" alt="vk"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/img/footer_img/social/social-widget/pinterest.png" alt="pinterest"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/img/footer_img/social/social-widget/tumblr.png" alt="tumblr"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/img/footer_img/social/social-widget/dribbble.png" alt="dribbble"></a>
+                            </li>
+                        </ul>
+                        <!-- end of social-widget-icons sidebar -->
+                  <!-- sidebar-tab-post-widget   -->
+                        <div class="sidebar-tab-post-widget">
+                            <h3 class="sidebar-heading">tab post widget</h3>
+                            <hr id="sidebar-hr">
+                            <div class="btn-group" id="double-btn" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default active">recent post</button>
+                                <button type="button" class="btn btn-default">popular post</button>
+                            </div>
+                            <ul class="list-group tab-post-widget-list-group">
+                                <li class="list-group-item">
+                                    <div class="tab-post-small">
+                                        <div class="row">
+                                          <div class="col-xs-5 sidebar-image">
+                                            <img src="/img/sidebar-photo/sidebar-photo-1.png" alt="photo">
+                                          </div>
+                                          <div class="col-xs-7 sidebar-image-text">
+                                              <p>April 28, 2016</p>
+                                              <h4><a =href"#">Duis commodo elit sed nisi molestie</a></h4>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="tab-post-small">
+                                      <div class="row">
+                                        <div class="col-xs-5 sidebar-image">
+                                          <img src="/img/sidebar-photo/sidebar-photo-2.png" alt="photo">
+                                        </div>
+                                        <div class="col-xs-7 sidebar-image-text">
+                                            <p>April 28, 2016</p>
+                                            <h4><a =href"#">Duis commodo elit sed nisi molestie</a></h4>
+                                        </div>
+                                      </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="tab-post-small">
+                                      <div class="row">
+                                        <div class="col-xs-5 sidebar-image">
+                                          <img src="/img/sidebar-photo/sidebar-photo-3.png" alt="photo">
+                                        </div>
+                                        <div class="col-xs-7 sidebar-image-text">
+                                            <p>April 28, 2016</p>
+                                            <h4><a =href"#">Duis commodo elit sed nisi molestie</a></h4>
+                                        </div>
+                                      </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="tab-post-small">
+                                      <div class="row">
+                                        <div class="col-xs-5 sidebar-image">
+                                          <img src="/img/sidebar-photo/sidebar-photo-4.png" alt="photo">
+                                        </div>
+                                        <div class="col-xs-7 sidebar-image-text">
+                                            <p>April 28, 2016</p>
+                                            <h4><a =href"#">Duis commodo elit sed nisi molestie</a></h4>
+                                        </div>
+                                      </div>
+                                  </div>
+                                </li>
+                            </ul>
+                        </div>
+<!-- end of sidebar-tab-post-widget -->
+                        <div class="tags-cloud">
+                            <h3 class="sidebar-heading">tags</h3>
+                            <hr id="sidebar-hr">
+                            <a class="btn btn-default" href="#" role="button">Photography</a>
+                            <a class="btn btn-default" href="#" role="button">Web Design</a>
+                            <a class="btn btn-default" href="#" role="button">Youtube</a>
+                            <a class="btn btn-default" href="#" role="button">Envato</a>
+                            <a class="btn btn-default" href="#" role="button">Art</a>
+                            <a class="btn btn-default" href="#" role="button">Themefotest</a>
+                            <a class="btn btn-default" href="#" role="button">Illustration</a>
+                        </div>
+
                     </div>
+                    <!-- end of SIDEBAR -->
+                  </div>
                 </div>
             </div>
         </div>
@@ -555,8 +718,9 @@
         </div>
         <!-- end of gallery -->
         <!-- SUBSCRIBE -->
-        <div class="row">
-            <div id="subscribe">
+
+        <div id="subscribe">
+              <div class="row">
                 <div class="container-fluid">
                     <div class="container subscribe-form">
                         <form class="form-inline">
