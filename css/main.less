@@ -1,44 +1,8 @@
-@import url( '../bower_components/normalize-css/normalize.css'); // Fonts
-@import url('../font-awesome/css/font-awesome.min.css');
-@font-face {
-    font-family: 'Montserrat Bold';
-    src: url('/fonts/Montserrat/Montserrat-Bold.ttf');
-}
-@font-face {
-    font-family: 'Montserrat Regular';
-    src: url('/fonts/Montserrat/Montserrat-Regular.ttf');
-}
-@font-face {
-    font-family: 'Montserrat Black';
-    src: url('/fonts/Montserrat/montserrat-black.ttf');
-}
-@font-face {
-    font-family: 'Open Sans';
-    src: url('/fonts/Open_Sans/OpenSans-Regular.ttf');
-}
-@font-face {
-    font-family: 'Open Sans Bolt';
-    src: url('/fonts/Open_Sans/OpenSans-Bold.ttf');
-}
-// GlobalVariables
-@topMenuColorBg: #191919;
-/*black*/
-@topMenuColorElements: #707070;
-@text-black: #212121;
-@footerBlack: #303030;
-/*grey*/
-@body-bg: #f5f5f5;
-@grey-lines-color: #dfdfdf;
-/*white*/
-@nav-letters-color: #fff;
-/*rose*/
-@nav-rose: #ff4081;
-@button-color: #303f9f;
-@MainFontRegular: 'Montserrat Regular';
-@MainFontBolt: 'Montserrat Bold';
-@MainFontBlog: 'Open Sans';
-@MainFontBlogBolt: 'Open Sans';
-@MainFontBig: 'Montserrat Black';
+@import url( '/bower_components/normalize-css/normalize.css'); // Fonts
+@import url('/fonts/font-awesome/css/font-awesome.min.css');
+@import "_fonts"; // library.less
+@import "_vars";
+
 
 body {
     background-color: @body-bg;
@@ -243,110 +207,139 @@ ul.right-nav {
     }
 }
 
-.container-fluid {
+.absolute-element {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+#myCarousel {
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .item {
+    padding-top: 278px;
+    padding-bottom: 50px;
+    // min-height:800px;
+  }
+
+  .carousel-inner {
+      height: 100%;
+  }
+  .fill {
+    background-size: cover;
+    background-repeat: no-repeat;;
+    background-position:  center top;
+    .absolute-element();
+  }
+  .fa.fa-chevron-right {
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    top: 50%;
+    right: 15%;
+  }
+  .fa.fa-chevron-left {
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    top: 50%;
+    left: 15%;
+  }
+  .carousel-caption {
     padding: 0;
-}
+    overflow: hidden;
+    top:20%;
+    left: 0!important;
+    right: 0!important;
+    position: relative;
 
-.carousel-inner {
-    .item {
-        img {
-            width: 100%;
+    a.read-more-btn {
+      margin-top: 0;
+      background-color: @button-color;
+      border: none;
+      border-radius: 22px;
+      font-family: @MainFontRegular;
+      font-size: 24px;
+      font-variant: small-caps;
+      box-shadow: 0 17px 24px 0 rgba(48, 63, 159, 0.2);
+      padding: 10px 28px;
+      line-height: 1;
+      margin-bottom: 30px;
+      &:hover {
+        background-color: lighten(@button-color,10%);
         }
     }
-}
+    .carousel-author {
+      padding-top: 30px;
 
-div#carousel-example-generic {
-    a.carousel-control {
-        span.glyphicon {
-            position: absolute;
-            top: 50%;
+        h5>a {
+          font-family: @MainFontBolt;
+          font-size: 14px;
+          color: @nav-letters-color;
+          margin: 0;
+          padding: 5px;
         }
-
-        span.glyphicon.glyphicon-menu-left {
-            left: 40px;
+        p {
+          font-family: @MainFontRegular;
+          font-size: 12px;
+          color: @topMenuColorElements;
+          display: inline-block;
+          margin: 0;
+          padding: 5px;
         }
-
-        span.glyphicon.glyphicon-menu-right {
-            right: 40px;
-        }
-    }
-}
-
-div.carousel-caption {
-    padding-bottom: 65px;
-    padding-top: 0;
-    bottom: 0;
-
-    h4 {
-        margin: 0 auto;
-        font-family: @MainFontRegular;
-        font-size: 28px;
-        color: @topMenuColorElements;
-        text-transform: uppercase;
+          p.caption-date {
+              display: block;
+              margin-bottom: 35px;
+          }
     }
 
     h2 {
-        margin: 28px auto 0;
-        font-family: @MainFontBig;
-        font-size: 42px;
-        text-transform: uppercase;
-        color: @nav-letters-color;
-    }
-
-    button {
-        margin-top: 0;
-        background-color: @button-color;
-        border: none;
-        border-radius: 22px;
-        font-family: @MainFontRegular;
-        font-size: 24px;
-        font-variant: small-caps;
-        box-shadow: 0 17px 24px 0 rgba(48, 63, 159, 0.2);
-        padding: 10px 28px;
-        line-height: 1;
-
-        &:hover {}
-    }
-
-    img.img-circle {
-        width: 50px;
-        display: block;
-        margin: 79px auto 18px;
-        text-align: center;
-    }
-
-    h5 {
-        font-family: @MainFontBolt;
-        font-size: 14px;
-        color: @nav-letters-color;
-    }
-
-    p {
-        font-family: @MainFontRegular;
-        font-size: 12px;
-        color: @topMenuColorElements;
-        display: inline-block;
-    }
-
-    p.caption-date {
-        display: block;
-        margin-bottom: 35px;
-    }
-
-    .comments {
-        margin-right: 40px;
-    }
-
-    .comments,
-    .likes {
-        display: inline-block;
-
-        img {
-            width: 14px;
-            display: inline-block;
+      font-family: @MainFontBig;
+      font-size: 42px;
+      text-transform: uppercase;
+      color: @nav-letters-color;
+      margin-top: 0;
+      padding-bottom: 20px;
         }
+    h4 {
+      font-family: @MainFontRegular;
+      font-size: 28px;
+      color: @grey-lines-color;
+      text-transform: uppercase;
+      opacity: 0.5;
     }
+    img.img-circle {
+      max-width: 50px;
+    }
+  }
 }
+
+.comment-like {
+  a {
+    color: @grey-lines-color;
+    cursor: pointer;
+    font-family: @MainFontRegular;
+    font-size: 12px;
+    &:hover {
+      color: lighten(@grey-lines-color, 30%);
+    }
+  }
+}
+.long-white-space {
+  display: inline-block;
+  width: 25px;
+}
+
+
+//////////////
 
 span.icon-bar {
     background: @topMenuColorBg;
@@ -563,6 +556,12 @@ div.sort-blog {
     }
 
   }
+}
+#sidebar:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: red;
 }
 h3.sidebar-heading {
   font-family: @MainFontBolt;
@@ -858,16 +857,19 @@ li.list-group-item.thumbnail-bigger-down {
 }
 //footer navigation
 
-div.col-md-8.footer-button {
-    padding-right: 0;
-    width: 820px;
-
-    .pager {
-        margin: 0 auto;
-        height: 130px;
+.footer-button-next {
+  display: block;
+    .pager1 {
+        margin: 0;
         padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 25px;
+        text-align: right;
 
-        .next {
+        li.next {
+          display: inline-block;
+          // padding-left: 15px;
+          padding-right: 0;
             // button right arrow
             a {
                 position: relative;
@@ -879,7 +881,7 @@ div.col-md-8.footer-button {
                 i.fa.fa-arrow-right {
                     position: absolute;
                     top: 13px;
-                    right: 12px;
+                    right: 13px;
                 }
 
                 span.footer-button-more {
@@ -1297,6 +1299,13 @@ span#span-choose {
 
 //for mobile devices
 @media (max-width: 768px) {
+  #myCarousel {
+    .carousel-caption {
+      h2 {
+        font-size: 90%;
+      }
+    }
+  }
     #navigator {
         padding-top: 1px;
     }
@@ -1371,27 +1380,36 @@ span#span-choose {
     }
 }
 @media (max-width: 996px) {
-    div.carousel-caption {
-        .comments,
-        .likes,
-        h5,
-        img.img-circle,
+  #myCarousel {
+    .carousel-caption {
+      h2 {
+        font-size: 42px-20%;
+      }
+      h4 {
+        font-size: 28px-20%
+      }
+      .carousel-author {
         p.caption-date {
-            display: none;
+          margin-bottom: 10px;
         }
-
-        h4 {
-            font-size: 14px;
-        }
-
+        padding-top: 15px;
+        padding-bottom: 30px;
         h2 {
-            font-size: 22px;
+         padding-bottom: 10px;
         }
+      }
     }
+  }
 }
 @media (min-width: 768px) {
     .navbar > .container .navbar-brand,
     .navbar > .container-fluid .navbar-brand {
         margin-left: 0;
     }
+}
+
+@media (max-width: 768px) {
+ .wrapper {
+   font-size: 90%;
+ }
 }

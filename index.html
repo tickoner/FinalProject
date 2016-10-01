@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>My Final Project</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet/less" type="text/css" href="styles/main.less">
+    <link rel="stylesheet/less" type="text/css" href="css/main.less">
     <script src="bower_components/less/dist/less.min.js" type="text/javascript"></script>
 </head>
 
@@ -157,83 +157,89 @@
             </div>
         </nav>
         <!--HOME-->
-        <div id="home">
-            <div class="container-fluid">
-                <!-- SLIDER-->
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="../img/home_bg.jpg" alt="first slide">
-                            <div class="carousel-caption caption-first">
+        <!-- Carousel-->
 
-                                <h4>inspiration</h4>
-                                <h2>5 Ways milllennials can start
-                        building their future today</h2>
-                                <button>read more</button>
-                                <img src="img/photo-rounded.png" alt="photo" class="img-circle">
-                                <h5>Henry Little</h5>
-                                <p class="caption-date">Apri 28, 2016 10:15</p>
-                                <div class="comments"><img src="/img/header_img/forum.png" alt="">
-                                    <p> Comments(28)</p>
-                                </div>
-                                <div class="likes"><img src="/img/header_img/heart.png" alt="">
-                                    <p> Likes(07)</p>
-                                </div>
-                            </div>
+        <div id="myCarousel" class="carousel slide">
 
-                        </div>
-                        <div class="item">
-                            <img src="../img/flash.jpg" alt="second slide">
-                            <div class="carousel-caption caption-first">
-                                <h4>inspiration</h4>
-                                <h2>5 Ways milllennials can start
-                        building their future today</h2>
-                                <button>read more</button>
-                                <img src="img/myko.jpg" alt="..." class="img-circle">
-                                <h5>Henry Little</h5>
-                                <p class="caption-date">Apri 28, 2016 10:15</p>
-                                <div class="comments"><img src="/img/header_img/forum.png" alt="">
-                                    <p> Comments(28)</p>
-                                </div>
-                                <div class="likes"><img src="/img/header_img/heart.png" alt="">
-                                    <p> Likes(07)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="../img/ninja.jpg" alt="third slide">
-                            <div class="carousel-caption caption-first">
-                                <h4>inspiration</h4>
-                                <h2>5 Ways milllennials can start
-                        building their future today</h2>
-                                <button>read more</button>
-                                <img src="img/snig.jpg" alt="..." class="img-circle">
-                                <h5>Henry Little</h5>
-                                <p class="caption-date">Apri 28, 2016 10:15</p>
-                                <div class="comments"><img src="/img/header_img/forum.png" alt="">
-                                    <p> Comments(28)</p>
-                                </div>
-                                <div class="likes"><img src="/img/header_img/heart.png" alt="">
-                                    <p> Likes(07)</p>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container">
+                        <div class="fill" style="background-image:url(/img/home_bg.jpg)"></div>
+                        <div class="carousel-caption">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4>inspiration</h4>
+                                    <h2>5 Ways milllennials can start building their future today</h2>
+                                    <a href="#" class="btn btn-lg btn-primary read-more-btn">read more</a>
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-4 carousel-author">
+                                            <a href="#"><img src="img/photo-rounded.png" alt="..." class="img-circle"></a>
+                                            <h5><a href="#">Henry Little</a></h5>
+                                            <p class="caption-date">Apri 28, 2016 10:15</p>
+                                            <p class="comment-like"><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>Comments (28)</a><span class="long-white-space">&nbsp;</span><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>Likes (07)</a></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
-
+                <div class="item">
+                    <div class="container">
+                        <div class="fill" style="background-image:url(/img/flash.jpg)"></div>
+                        <div class="carousel-caption">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4>inspiration</h4>
+                                    <h2>5 Ways milllennials can start building their future today</h2>
+                                    <a href="#" class="btn btn-lg btn-primary read-more-btn">read more</a>
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-4 carousel-author">
+                                            <a href="#"><img src="img/snig.jpg" alt="..." class="img-circle"></a>
+                                            <h5><a href="#">Henry Little</a></h5>
+                                            <p class="caption-date">Apri 28, 2016 10:15</p>
+                                            <p class="comment-like"><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>Comments (28)</a><span class="long-white-space">&nbsp;</span><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>Likes (07)</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container">
+                        <div class="fill" style="background-image:url(/img/ninja.jpg)"></div>
+                        <div class="carousel-caption">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4>inspiration</h4>
+                                    <h2>5 Ways milllennials can start building their future today</h2>
+                                    <a href="#" class="btn btn-lg btn-primary read-more-btn">read more</a>
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-4 carousel-author">
+                                            <a href="#"><img src="img/myko.jpg" alt="..." class="img-circle"></a>
+                                            <h5><a href="#">Henry Little</a></h5>
+                                            <p class="caption-date">Apri 28, 2016 10:15</p>
+                                            <p class="comment-like"><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>Comments (28)</a><span class="long-white-space">&nbsp;</span><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>Likes (07)</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </a>
         </div>
+
+
 
         <!-- Blog navigation-->
         <div class="sort-blog">
@@ -512,13 +518,15 @@
 
                                 </div>
                             </div>
+                            <!-- pagination of blog -->
+
+                            <!--end of pagination of blog -->
                         </div>
                         <!-- end of bigger thumbnails -->
-                        <!-- pagination of blog -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-12 col-md-8 footer-button">
-                                    <ul class="pager">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="footer-button-next">
+                                    <ul class="pager pager1">
                                         <li class="next">
 
                                             <a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></span><span class="footer-button-more">More</span></a>
@@ -526,10 +534,10 @@
                                         </li>
                                     </ul>
                                 </div>
-
                             </div>
                         </div>
-                        <!--end of pagination of blog -->
+
+
                     </div>
                     <!-- end of <div class="col-sm-9">-->
                     <!-- SIDEABR -->
@@ -885,28 +893,28 @@
                         <!--end of twitter-widget -->
                         <div class="social-widget">
                             <h3 class="footer-up-head">social widget</h3>
-                                <div>
-                                    <ul class="social-widget-icons">
-                                        <li>
-                                            <a href="#"><img src="/img/footer_img/social/social-widget/facebook.png" alt="facebook"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="/img/footer_img/social/social-widget/twitter.png" alt="twitter"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="/img/footer_img/social/social-widget/vk.png" alt="vk"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="/img/footer_img/social/social-widget/pinterest.png" alt="pinterest"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="/img/footer_img/social/social-widget/tumblr.png" alt="tumblr"></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="/img/footer_img/social/social-widget/dribbble.png" alt="dribbble"></a>
-                                        </li>
-                                    </ul>
-                              </div>
+                            <div>
+                                <ul class="social-widget-icons">
+                                    <li>
+                                        <a href="#"><img src="/img/footer_img/social/social-widget/facebook.png" alt="facebook"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="/img/footer_img/social/social-widget/twitter.png" alt="twitter"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="/img/footer_img/social/social-widget/vk.png" alt="vk"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="/img/footer_img/social/social-widget/pinterest.png" alt="pinterest"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="/img/footer_img/social/social-widget/tumblr.png" alt="tumblr"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="/img/footer_img/social/social-widget/dribbble.png" alt="dribbble"></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <!-- end of social widget -->
