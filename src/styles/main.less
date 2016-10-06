@@ -1,8 +1,9 @@
 @import url('/fonts/font-awesome/css/font-awesome.min.css');
 @import "_fonts"; // library.less
 @import "_vars";
-
-
+@import "_button-to-top";
+@import "_sidebar";
+@import "_signin";
 body {
     background-color: @body-bg;
 }
@@ -13,7 +14,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
+.open.dropdown-menu{display:block;}
 .no-margin {
   margin: 0;
 }
@@ -44,9 +45,9 @@ div#header {
         box-sizing: border-box;
 
         div.social-icons {
-            margin-top: 5px;
             display: inline-block;
-
+            padding-top: 5px;
+            padding-bottom: 5px;
             ul {
                 padding: 0;
                 list-style: none;
@@ -106,17 +107,10 @@ div.language {
         font-family: @MainFontRegular;
         font-size: 16px;
         color: @topMenuColorElements;
-
-        span {
-            margin-left: 5px;
-            vertical-align: middle;
-        }
-
         span.glyphicon {
-          padding-top: 2px;
+          padding: 5px;
           vertical-align: middle;
           font-size: 12px;
-
             &:hover {
                 cursor: pointer;
                 -webkit-filter: brightness(50%);
@@ -666,263 +660,6 @@ div.sort-blog {
   }
 }
 
-// SIDEBAR
-// sidebar search
-.right-side {
-  z-index: 11;
-}
-.right-side:after {
-  z-index: 10;
-  background: red;
-  bottom: 0;
-
-
-}
-#sidebar {
-  background-color: @nav-letters-color;
-  padding-bottom: 40px;
-  ul.social-widget-icons {
-    display: block;
-    text-align: justify;
-    width: 100%;
-    li {
-      a {
-        img {
-          width: 34px;
-          height: 34px;
-        }
-      }
-    }
-  }
-}
-#sidebar-search-form {
-  border-radius: 30px 30px 30px 30px;
-  padding-top:20px;
-  padding-bottom:15px;
-  padding-left: 0;
-  padding-right: 0;
-  .input-group {
-    width: 100%;
-    background-color: none;
-    border: none;
-    #sidebar-search-input {
-      border-radius: 30px 30px 30px 30px;
-      background-color: @body-bg;
-      font-family: @MainFontBlog;
-      font-size: 16px;
-      position: relative;
-      height: 43px;
-      width: 100%;
-      border: none;
-    }
-    .input-group-btn {
-      .sidebar-search-btn {
-        color: @nav-letters-color;
-        border-radius: 35px 35px 35px 35px;
-        background-color: @nav-rose;
-        white-space: nowrap;
-        font-size: 14px;
-        width: 35px;
-        height: 35px;
-        position: absolute;
-        top:4px;
-        right: 5px;
-        z-index: 10;
-      }
-    }
-
-  }
-}
-#sidebar:after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  background-color: red;
-}
-h3.sidebar-heading {
-  border-bottom: 1px solid @button-color;
-  font-family: @MainFontBolt;
-  font-size: 18px;
-  width: 100%;
-  color: @button-color;
-  text-transform: uppercase;
-  padding: 5px;
-}
-hr.sidebar-hr {
-  color: @button-color;
-  border: none;
-  background-color: @button-color;
-  height: 2px;
-  line-height: 1;
-}
-#sidebar-hr {
-  color: @button-color;
-  border: none;
-  background-color: @button-color;
-  height: 1px;
-  border-top: none;
-}
-.sidebar-categories-list {
-  font-family: @MainFontBlog;
-  font-size: 14px;
-  a{
-    text-decoration: none;
-    color: black;
-  }
-}
-
-
-.right-text-table {
-  text-align: right;
-  p {
-    font-family: @MainFontBlogBolt;
-    font-weight: bold;
-  }
-
-
-}
-.table>tbody>tr:first-child td {
-  border-top: none;
-}
-
-form.sidebar-subscribe-form {
-  .form-group {
-    margin-bottom: 10px;
-    label.control-label {
-      font-family: @MainFontBlog;
-      font-size: 16px;
-      padding-bottom: 10px;
-      padding-top: 0;
-    }
-  }
-}
-button#subscribe-btn-sidebar {
-  width: 100%;
-  font-family: @MainFontRegular;
-  font-variant: small-caps;
-  font-size: 24px;
-  color: @nav-letters-color;
-  background: @button-color;
-  border: none;
-  transition: all 0.2s linear 0.2s;
-  -webkit-transition: all 0.2s linear 0.2s;
-  -moz-transition: all 0.2s linear 0.2s;
-  -o-transition: all 0.2s linear 0.2s;
-
-  &:hover {
-      background: lighten(@button-color, 20%);
-  }
-
-}
-// magic line
-.magic-line {
-  display: block;
-  position: relative;
-  text-align: center;
-}
-#or {
-  display: inline-block;;
-  width: 100%;
-  font-family: @MainFontRegular;
-  font-size: 14px;
-}
-#or:before, #or:after {
-  position: absolute;
-  content: '';
-  display: inline-block;
-  border-top: 1px solid black;
-  width: 46%;
-  top:50%;
-
-}
-#or:before {
-  left:0;
-}
-#or:after {
-  right: 0;
-}
-
-
-//------
-#double-btn {
-  width:100%;
-  padding-bottom: 15px;
-  white-space: nowrap;
-  button {
-      box-sizing:border-box;
-      display: inline-block;
-      width: 50%;
-      font-family: @MainFontRegular;
-      font-size: 12px;
-      color: @button-color;
-      text-transform: uppercase;
-      padding:13px 0 13px 0;
-      border-color: @button-color;
-      background-color: @nav-letters-color;
-      &.active {
-        background-color: @button-color;
-        color: @nav-letters-color;
-
-      }
-    }
-}
-button.btn.btn-default.second-button {
-  position: absolute;
-  box-sizing: content-box;
-}
-ul.list-group.tab-post-widget-list-group >
-  li.list-group-item {
-    border-left: none;
-    border-right: none;
-    &:first-child {
-      border-top: none;
-    }
-     &:last-child {
-       border-bottom: none;
-     }
-  }
-.social-widget-icons-container {
-  padding: 0;
-}
-.tab-post-small {
-  img {
-    width: 100%;
-  }
-  .sidebar-image {
-    padding-left: 0;
-    width: 100px;
-  }
-  .sidebar-image-text {
-    margin-left: 115px;
-      font-family: @MainFontBlog;
-      color: @footerBlack;
-      p {
-        font-size: 12px;
-        }
-      h4 {
-        a {
-          font-size: 14px;
-          font-weight: bold;
-          color: @footerBlack;
-          cursor: pointer;
-        }
-
-      }
-  }
-}
-
-.tags-cloud {
-  a {
-    border: none;
-    background-color: @grey-lines-color;
-    color: @footerBlack;
-    font-family: @MainFontBlog;
-    font-size: 14px;
-    margin: 5px;
-  }
-}
-
-
 //thumbnails-3
 
 .thumbnail-smaller {
@@ -1452,13 +1189,15 @@ span#span-choose {
      padding-top: 3px;
    }
  }
+.language2-button {
+  .dropdown-menu.dropdown-menu-left {
+    background-color: @footerBlack;
+     a {
+       color: @topMenuColorElements;
+     }
+  }
+}
 
- .dropdown-menu.dropdown-menu-left {
-   background-color: @footerBlack;
-    a {
-      color: @topMenuColorElements;
-    }
- }
  #footer-down {
    .links {
      .unstyled {

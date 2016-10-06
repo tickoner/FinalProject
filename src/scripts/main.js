@@ -48,3 +48,22 @@ $('.flickr-widget-container').flickrPhotoStream({ id: '95570410@N07', setId: '72
       //     container: '<div />',    // wrap the image
       //     cssClass: 'photos-item'  // applied to the image's link
       // }).done(function () {});
+
+$('body').prepend('<a href="#" class="back-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>'); //button scroll to top
+
+var amountScrolled = 300;
+
+$(window).scroll(function() {
+	if ( $(window).scrollTop() > amountScrolled ) {
+		$('a.back-to-top').fadeIn('slow');
+	} else {
+		$('a.back-to-top').fadeOut('slow');
+	}
+});
+
+$('a.back-to-top').click(function() {
+	$('html, body').animate({
+		scrollTop: 0
+	}, 700);
+	return false;
+});
