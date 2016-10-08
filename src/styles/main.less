@@ -1,11 +1,17 @@
 @import url('/fonts/font-awesome/css/font-awesome.min.css');
 @import "_fonts"; // library.less
 @import "_vars";
+@import "_header";
 @import "_button-to-top";
 @import "_sidebar";
 @import "_signin";
 body {
     background-color: @body-bg;
+}
+
+body,
+html {
+  height: 100%;
 }
 
 // custom classes
@@ -36,90 +42,8 @@ ul.drop-down {
   z-index: 10;
 }
 
-div#header {
-    background: @topMenuColorBg;
-    display: block;
-    min-height: 40px;
 
-    div.container {
-        box-sizing: border-box;
 
-        div.social-icons {
-            display: inline-block;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            ul {
-                padding: 0;
-                list-style: none;
-
-                li {
-                    display: inline-block;
-
-                    &:hover {
-                        -webkit-filter: brightness(50%);
-                        -ms-filter: brightness(50%);
-                        filter: brightness(50%);
-                    }
-                }
-            }
-        }
-
-        div.authorization {
-            display: inline-block;
-
-            div.sign-in {
-                a {
-                    margin-top: 5px;
-                    font-family: @MainFontRegular;
-                    font-size: 16px;
-                    color: @topMenuColorElements;
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    display: inline-block;
-                    border-right: 1px @topMenuColorElements solid;
-                    padding-right: 15px;
-
-                    &:hover {
-                        -webkit-filter: brightness(50%);
-                        -ms-filter: brightness(50%);
-                        filter: brightness(50%);
-                    }
-                }
-            }
-
-            ul.dropdown-menu-right {
-                background-color: @topMenuColorBg;
-
-                li {
-                    a {
-                        color: @topMenuColorElements;
-                    }
-                }
-            }
-        }
-    }
-}
-
-div.language {
-    div.btn-group {
-        margin-left: 15px;
-        padding-top: 5px;
-        font-family: @MainFontRegular;
-        font-size: 16px;
-        color: @topMenuColorElements;
-        span.glyphicon {
-          padding: 5px;
-          vertical-align: middle;
-          font-size: 12px;
-            &:hover {
-                cursor: pointer;
-                -webkit-filter: brightness(50%);
-                -ms-filter: brightness(50%);
-                filter: brightness(50%);
-            }
-        }
-    }
-}
 
 .main-navigate {
     position: absolute;
@@ -1298,15 +1222,6 @@ span#span-choose {
 
     ul.right-nav {
         padding-top: 0;
-    }
-
-    div#header div.container div.social-icons {
-        display: block;
-    }
-
-    div#header div.container div.authorization {
-        display: inline-block;
-        float: left !important;
     }
 
     div.carousel-caption {

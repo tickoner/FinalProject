@@ -1,57 +1,59 @@
-.form-signin {
-  width: 100%;
-  padding: 15px;
-  text-align: center;
-}
-
-.wrapper-signin {
-  width: 100%;
-  background-color: @body-bg;
-}
-
-#inputNameSignIn,#inputEmailSignIn {
-  border-radius: 30px 30px 30px 30px;
-  background-color: @grey-lines-color;
-  font-family: @MainFontBlog;
-  font-size: 16px;
-  width: 100%;
-  border: none;
-  padding: 10px 28px;
-}
-
-
-#btn-default-SignIn {
-  width: 100%;
-  color: @nav-letters-color;
-  margin-top: 0;
-  background-color: @button-color;
-  border: none;
-  border-radius: 22px;
-  font-family: @MainFontRegular;
-  font-size: 24px;
-  font-variant: small-caps;
-  box-shadow: 0 17px 24px 0 rgba(48, 63, 159, 0.2);
-  padding: 10px 28px;
-  line-height: 1;
-  margin-bottom: 30px;
-  &:hover {
-    background-color: lighten(@button-color,10%);
-    }
-}
-
-.wrapper-signin {
-  .navbar.top-fixed.main-navigate {
-    background-color: @text-black;
-    position: static;
-    margin-bottom: 5px;
-    padding-bottom: 22px;
-    min-height: 150px;
+.login-page {
+  .form-signin {
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    padding: 50px 15px 15px;
+    background: @nav-letters-color;
   }
-}
 
-.footer-down.navbar-fixed-bottom {
-  background-color: @footerBlack;
-  padding: 15px;
-  color: @nav-letters-color;
-  min-height: 50px;
+  #inputNameSignIn,#inputEmailSignIn {
+    border-radius: 30px 30px 30px 30px;
+    background-color: @grey-lines-color;
+    font-family: @MainFontBlog;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    padding: 10px 28px;
+  }
+
+
+  #btn-default-SignIn {
+    width: 100%;
+    color: @nav-letters-color;
+    margin-top: 0;
+    background-color: @button-color;
+    border: none;
+    border-radius: 22px;
+    font-family: @MainFontRegular;
+    font-size: 24px;
+    font-variant: small-caps;
+    box-shadow: 0 17px 24px 0 rgba(48, 63, 159, 0.2);
+    padding: 10px 28px;
+    line-height: 1;
+    margin-bottom: 30px;
+    &:hover {
+      background-color: lighten(@button-color,10%);
+      }
+  }
+
+  .wrapper-signin {
+    width: 100%;
+    background-color: @body-bg;
+    .navbar.top-fixed.main-navigate {
+      background-color: @text-black;
+      position: static;
+      margin-bottom: 5px;
+      padding-bottom: 22px;
+      min-height: 150px;
+    }
+  }
+
+  .footer-down.navbar-fixed-bottom {
+    background-color: @footerBlack;
+    padding: 15px;
+    color: @nav-letters-color;
+    min-height: 50px;
+  }
+
 }

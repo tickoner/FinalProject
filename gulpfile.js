@@ -22,7 +22,8 @@ gulp.task('fonts', function() {
   return gulp.src([
     'src/fonts/**/*.*',
     'src/vendor/bootstrap/dist/fonts/*.*',
-    'src/vendor/font-awesome/fonts/*.*'
+    'src/vendor/font-awesome/fonts/*.*',
+    'src/vendor/material-design-icons/iconfont/MaterialIcons-Regular.ttf'
   ])
   .pipe(gulp.dest('dist/fonts'));
 });
@@ -39,7 +40,8 @@ gulp.task('vendor-css', function() {
   return gulp.src([
     'src/vendor/bootstrap/dist/css/bootstrap.css',
     'src/vendor/font-awesome/css/font-awesome.css',
-    'src/vendor/normalize-css/normalize.css'
+    'src/vendor/normalize-css/normalize.css',
+    'src/vendor/material-design-icons/iconfont/material-icons.css'
   ])
   .pipe(nano())
   .pipe(concat('vendor.min.css'))

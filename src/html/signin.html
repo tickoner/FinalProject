@@ -7,61 +7,64 @@
     <title>Sign In</title>
     <link rel="stylesheet" href="css/vendor.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" type="image/ico" href="img/favicon.ico">
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
 </head>
 
-<body>
-    <div class="wrapper wrapper-signin">
-        <div id="header">
-            <div class="container clearfix">
-                <div class="social-icons">
-                    <ul>
-                        <li>
-                            <a href="#" target="_blank"><img src="img/header_img/soc_icon1.png" alt="facebook icon" /></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><img src="img/header_img/soc_icon2.png" alt="twitter icon"></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><img src="img/header_img/soc_icon3.png" alt="pinterest icon"></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><img src="img/header_img/soc_icon4.png" alt="vkontakte icon"></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><img src="img/header_img/soc_icon5.png" alt="google plus icon"></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><img src="img/header_img/soc_icon6.png" alt="behance icon"></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><img src="img/header_img/soc_icon7.png" alt="dribble icon"></a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><img src="img/header_img/soc_icon8.png" alt="instagram icon"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="authorization pull-right">
-                    <div class="sign-in pull-left">
-                        <img src="img/header_img/account_circle.png" alt="account_circle">
-                        <a href="#">sign in</a>
-                    </div>
-                    <div class="language pull-right dropdown">
-                        <div class="btn-group">
-                            <img src="img/header_img/language.png" alt="language">
-                            <span id="chooseLanguage">ENG</span>
-                            <span class="pull-right glyphicon glyphicon-chevron-down dropdown-toggle" data-toggle="dropdown"></span>
-                            <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                                <li><a href="#">ENG</a></li>
-                                <li><a href="#">UA</a></li>
-                                <li><a href="#">POL</a></li>
+<body class="login-page">
+    <div class="wrapper wrapper-signin ">
+      <!-- HEADER -->
+      <div id="header">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-3">
+                        <ul class="social-icons pull-left">
+                            <li>
+                                <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                  </div>
+                  <div class="col-md-2 col-md-offset-7">
+                    <div class="authorization pull-right">
+                        <div class="sign-in pull-left">
+                            <a href="signin.html"><i class="material-icons">account_circle</i><span>sign in</span></a>
+                        </div>
+                        <div class="btn-group language">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 <i class="material-icons">language</i><span>eng</span><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">eng</a></li>
+                                <li><a href="#">ua</a></li>
+                                <li><a href="#">pl</a></li>
                             </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- end of header -->
 
         <nav class="navbar top-fixed main-navigate">
             <div class="container">
