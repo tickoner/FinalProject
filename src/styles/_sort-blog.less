@@ -1,0 +1,40 @@
+div.sort-blog {
+    background-color: @nav-letters-color;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 30px;
+
+    h5 {
+        display: inline-block;
+        font-family: @MainFontBolt;
+        font-size: 16px;
+        color: @topMenuColorElements;
+        font-variant: small-caps;
+        margin-right: 30px;
+    }
+
+    .pager {
+        margin-top: 0;
+        margin-bottom: 0;
+        display: inline-block;
+
+        a {
+            margin-right: 15px;
+            padding-left: 26px;
+            padding-right: 26px;
+            font-size: 16px;
+            font-family: @MainFontRegular;
+            color: @topMenuColorElements;
+            font-variant: small-caps;
+            background-color: @body-bg;
+            border: none;
+
+            &.active {
+                color: @button-color;
+                border: 1px solid @button-color;
+                background-color: @nav-letters-color;
+            }
+        }
+    }
+}

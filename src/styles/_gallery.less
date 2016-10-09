@@ -1,0 +1,31 @@
+//gallery
+
+div#gallery {
+    .container-fluid {
+        height: 240px;
+        padding: 0;
+        margin: 0 auto;
+        overflow-x: auto;
+        overflow-y: hidden;
+        font-size: 0; //clear space beetwen images
+        white-space: nowrap;
+
+        a {
+            img {
+                width: 240px;
+                height: 240px;
+            }
+        }
+    }
+}
+//hover on images in gallery
+
+.hover11 a img {
+    opacity: 1;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.hover11 a:hover img {
+    opacity: 0.5;
+}

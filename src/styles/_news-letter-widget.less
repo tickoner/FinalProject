@@ -1,0 +1,45 @@
+//news-letter-widget
+.news-letter-widget {
+    padding-top: 35px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#inputEmail,
+#inputName,
+textarea#inputMessage {
+    font-family: @MainFontBlog;
+    font-size: 14px;
+    color: @topMenuColorElements;
+    background-color: @text-black;
+    border: 2px solid @topMenuColorElements;
+    width: 100%;
+}
+
+#btn-default-subscribe {
+    width: 100%;
+    font-family: @MainFontRegular;
+    font-variant: small-caps;
+    font-size: 18px;
+    color: @grey-lines-color;
+    background: @footerBlack;
+    border: none;
+    transition: all 0.2s linear 0.2s;
+    -webkit-transition: all 0.2s linear 0.2s;
+    -moz-transition: all 0.2s linear 0.2s;
+    -o-transition: all 0.2s linear 0.2s;
+
+    &:hover {
+        background: lighten(@footerBlack, 20%);
+    }
+}
+
+.news-letter-widget {
+    .form-horizontal {
+        .form-group {
+            .col-sm-10 {
+                width: 100%;
+            }
+        }
+    }
+}

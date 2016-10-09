@@ -1,0 +1,118 @@
+.main-navigate {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+#logo {
+    padding-top: 25px;
+    padding-left: 0;
+    padding-right: 100px;
+}
+
+li.dropdown {
+    font-family: @MainFontBolt;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-bottom: 4px solid transparent;
+
+    &:hover {
+        border-bottom: 4px solid @nav-rose;
+    }
+
+    a {
+        padding-left: 0;
+        color: @nav-letters-color;
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        &.active {
+            background-color: transparent;
+        }
+    }
+
+    ul.dropdown-menu {
+        border: none;
+        color: @nav-letters-color;
+        background-color: transparent;
+        box-shadow: none;
+        text-align: left;
+    }
+
+    a.dropdown-toggle {
+        padding-right: 0;
+    }
+}
+
+button.navbar-toggle.collapsed {
+    background-color: (@topMenuColorElements);
+}
+
+#navigator {
+    .dropdown {
+        .dropdown-toggle {
+            &:active,
+            &:focus,
+            &:hover,
+            &:visited {
+                background-color: transparent;
+            }
+        }
+    }
+    padding-top: 13px;
+
+    li.dropdown.open {
+        a {
+            background-color: transparent;
+        }
+    }
+}
+
+span.glyphicon.glyphicon-menu-down {
+    color: @nav-letters-color;
+    padding-left: 10px;
+    margin-right: 25px;
+    padding-right: 0;
+}
+
+ul.right-nav {
+    padding-top: 25px;
+
+    a {
+        color: @nav-letters-color;
+        padding: 0 12px;
+        border-right: 1px solid @topMenuColorElements;
+        margin-bottom: 15px;
+
+        &:hover {
+            color: darken( @nav-letters-color, 20%);
+            background: none;
+        }
+
+        &:active,
+        &:focus,
+        &:visited {
+            background: none;
+        }
+    }
+
+    & li:last-child {
+        a {
+            border-right: none;
+        }
+    }
+
+    li {
+        background: transparent;
+    }
+}
+
+span.icon-bar {
+    background: @topMenuColorBg;
+}
+
+button.navbar-toggle {
+    background: @nav-rose;
+}

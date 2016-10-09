@@ -1,0 +1,126 @@
+
+#myCarousel {
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .item {
+        padding-top: 278px;
+        padding-bottom: 50px;
+    }
+
+    .carousel-inner {
+        height: 100%;
+    }
+
+    .fill {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        .absolute-element();
+    }
+
+    .fa.fa-chevron-right {
+        position: absolute;
+        font-size: 14px;
+        color: white;
+        top: 50%;
+        right: 15%;
+    }
+
+    .fa.fa-chevron-left {
+        position: absolute;
+        font-size: 14px;
+        color: white;
+        top: 50%;
+        left: 15%;
+    }
+
+    .carousel-caption {
+        padding: 0;
+        overflow: hidden;
+        top: 20%;
+        left: 0!important;
+        right: 0!important;
+        position: relative;
+
+        a.read-more-btn {
+            margin-top: 0;
+            background-color: @button-color;
+            border: none;
+            border-radius: 22px;
+            font-family: @MainFontRegular;
+            font-size: 24px;
+            font-variant: small-caps;
+            box-shadow: 0 17px 24px 0 rgba(48, 63, 159, 0.2);
+            padding: 10px 28px;
+            line-height: 1;
+            margin-bottom: 30px;
+
+            &:hover {
+                background-color: lighten(@button-color,10%);
+            }
+        }
+
+        .carousel-author {
+            padding-top: 30px;
+
+            h5 > a {
+                font-family: @MainFontBolt;
+                font-size: 14px;
+                color: @nav-letters-color;
+                margin: 0;
+                padding: 5px;
+            }
+
+            p {
+                font-family: @MainFontRegular;
+                font-size: 12px;
+                color: @topMenuColorElements;
+                display: inline-block;
+                margin: 0;
+                padding: 5px;
+            }
+
+            p.caption-date {
+                display: block;
+                margin-bottom: 35px;
+            }
+        }
+
+        h2 {
+            font-family: @MainFontBig;
+            font-size: 42px;
+            text-transform: uppercase;
+            color: @nav-letters-color;
+            margin-top: 0;
+            padding-bottom: 20px;
+        }
+
+        h4 {
+            font-family: @MainFontRegular;
+            font-size: 28px;
+            color: @grey-lines-color;
+            text-transform: uppercase;
+            opacity: 0.5;
+        }
+
+        img.img-circle {
+            max-width: 50px;
+        }
+    }
+}
+
+.comment-like {
+    a {
+        color: @grey-lines-color;
+        cursor: pointer;
+        font-family: @MainFontRegular;
+        font-size: 12px;
+
+        &:hover {
+            color: lighten(@grey-lines-color, 30%);
+        }
+    }
+}
