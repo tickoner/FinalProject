@@ -513,7 +513,7 @@
                             <div class="col-xs-12 col-md-4 thumbnail-smaller">
                                 <div class="thumbnail">
                                     <div class="media-holder">
-                                    <!--small slider-->
+                                        <!--small slider-->
                                         <div id="carousel-example-generic-small" class="carousel slide" data-ride="carousel">
                                             <!-- Wrapper for slides -->
                                             <div class="carousel-inner" role="listbox">
@@ -707,7 +707,7 @@
                             <!-- end of sidebar-search -->
                             <!-- sidebar-categories -->
                             <div class="sidebar-categories">
-                                <h3 class="sidebar-heading">categories</h3>
+                                <h3 class="sidebar-heading"><a href="#">categories</a></h3>
                                 <table class="table table-condensed sidebar-categories-list">
                                     <tr>
                                         <td><a href="#">Photography</a></td>
@@ -744,7 +744,7 @@
                             <!-- end of sidebar-categories -->
                             <!-- sidebar subscribe -->
                             <div class="sidebar-subscribe">
-                                <h3 class="sidebar-heading">subscribe</h3>
+                                <h3 class="sidebar-heading"><a href="#">subscribe</a></h3>
                                 <form class="form-horizontal sidebar-subscribe-form">
                                     <div class="form-group">
                                         <label for="inputName-sidebar" class="col-sm-2 control-label">Name</label>
@@ -797,17 +797,19 @@
                             <!-- end of social-widget-icons sidebar -->
                             <!-- sidebar-tab-post-widget   -->
                             <div class="sidebar-tab-post-widget">
-                                <h3 class="sidebar-heading">tab post widget</h3>
+                                <h3 class="sidebar-heading"><a href="#">tab post widget</a></h3>
                                 <div class="btn-group" id="double-btn" role="group" aria-label="...">
-                                    <button type="button" class="btn btn-default active">recent post</button>
-                                    <button type="button" class="btn btn-default second-button">popular post</button>
+                                    <form>
+                                        <button type="button" class="btn btn-default active">recent post</button>
+                                        <button type="button" class="btn btn-default second-button">popular post</button>
+                                    </form>
                                 </div>
                                 <ul class="list-group tab-post-widget-list-group">
                                     <li class="list-group-item">
                                         <div class="tab-post-small">
                                             <div class="row">
                                                 <div class="pull-left sidebar-image">
-                                                    <img src="/img/sidebar-photo/sidebar-photo-1.png" alt="photo">
+                                                  <a href="#"><img src="/img/sidebar-photo/sidebar-photo-1.png" alt="photo"></a>
                                                 </div>
                                                 <div class="sidebar-image-text">
                                                     <p>April 28, 2016</p>
@@ -820,7 +822,19 @@
                                         <div class="tab-post-small">
                                             <div class="row">
                                                 <div class="pull-left sidebar-image">
-                                                    <img src="/img/sidebar-photo/sidebar-photo-2.png" alt="photo">
+                                                  <a href="#"><img src="/img/sidebar-photo/sidebar-photo-2.png" alt="photo"></a>                                                </div>
+                                                <div class="sidebar-image-text">
+                                                    <p>April 28, 2016</p>
+                                                    <h4><a =href"#">Duis commodo elit sed nisi molestie</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="tab-post-small">
+                                            <div class="row">
+                                                <div class="pull-left sidebar-image">
+                                                    <a href="#"><img src="/img/sidebar-photo/sidebar-photo-3.png" alt="photo"></a>
                                                 </div>
                                                 <div class="sidebar-image-text">
                                                     <p>April 28, 2016</p>
@@ -833,20 +847,7 @@
                                         <div class="tab-post-small">
                                             <div class="row">
                                                 <div class="pull-left sidebar-image">
-                                                    <img src="/img/sidebar-photo/sidebar-photo-3.png" alt="photo">
-                                                </div>
-                                                <div class="sidebar-image-text">
-                                                    <p>April 28, 2016</p>
-                                                    <h4><a =href"#">Duis commodo elit sed nisi molestie</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="tab-post-small">
-                                            <div class="row">
-                                                <div class="pull-left sidebar-image">
-                                                    <img src="/img/sidebar-photo/sidebar-photo-4.png" alt="photo">
+                                                    <a href="#"><img src="/img/sidebar-photo/sidebar-photo-4.png" alt="photo"></a>
                                                 </div>
                                                 <div class="sidebar-image-text">
                                                     <p>April 28, 2016</p>
@@ -859,7 +860,7 @@
                             </div>
                             <!-- end of sidebar-tab-post-widget -->
                             <div class="tags-cloud">
-                                <h3 class="sidebar-heading">tags</h3>
+                                <h3 class="sidebar-heading"><a href="#">tags</a></h3>
                                 <a class="btn btn-default" href="#" role="button">Photography</a>
                                 <a class="btn btn-default" href="#" role="button">Web Design</a>
                                 <a class="btn btn-default" href="#" role="button">Youtube</a>

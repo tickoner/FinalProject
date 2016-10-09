@@ -24,13 +24,14 @@ textarea#inputMessage {
     color: @grey-lines-color;
     background: @footerBlack;
     border: none;
-    transition: all 0.2s linear 0.2s;
-    -webkit-transition: all 0.2s linear 0.2s;
-    -moz-transition: all 0.2s linear 0.2s;
-    -o-transition: all 0.2s linear 0.2s;
+    -webkit-transition: opacity .15s ease-in-out;
+    -moz-transition: opacity .15s ease-in-out;
+    -ms-transition: opacity .15s ease-in-out;
+    -o-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
 
     &:hover {
-        background: lighten(@footerBlack, 20%);
+        opacity: 0.6;
     }
 }
 
