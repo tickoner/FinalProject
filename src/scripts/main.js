@@ -42,13 +42,6 @@ $.fn.flickrPhotoStream = function (options) {
 
 $('.flickr-widget-container').flickrPhotoStream({ id: '95570410@N07', setId: '72157645102454435' });
 
-      // $('.flickr-widget-container').flickrPhotoStream({
-      //     id: '95570410@N07',             // Flickr Id
-      //     setId: '72157645102454435',          // Flick "Set" Id
-      //     container: '<div />',    // wrap the image
-      //     cssClass: 'photos-item'  // applied to the image's link
-      // }).done(function () {});
-
 $('body').prepend('<a href="#" class="back-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>'); //button scroll to top
 
 var amountScrolled = 300;
@@ -85,7 +78,13 @@ $(document).ready(function(){
               { "data": "Email" },
               { "data": "Phone" },
               { "data": "Country" }
-          ]
+          ],
+        "lengthMenu": [ 25, 50, 75, 100 ],
+        columnDefs: [{
+           "targets": "_all",
+            "width": "25%"
+          }]
       });
+
     });
 });

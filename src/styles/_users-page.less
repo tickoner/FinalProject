@@ -38,4 +38,47 @@
             height: 50px;
         }
     }
+    .users-holder {
+      background: @nav-letters-color;
+      padding: 15px;
+      border-radius: 4px;
+      font-family: @MainFontRegular;
+
+      font-size: 14px;
+    }
+    #users-table {
+      border: 0;
+      thead {
+        tr {
+          th {
+            font-family: @MainFontBolt;
+            font-size: 16px;
+            color:@button-color ;
+            vertical-align: top;
+            border-bottom: 1px solid @text-black;
+            padding-left: 8px;
+          }
+          .sorting:after, .sorting_asc:after, .sorting_desc:after{
+            position: absolute;
+            bottom: 0;
+          }
+
+        }
+
+      }
+      tbody {
+        tr {
+          td {
+            border-bottom: 1px solid @grey-lines-color;
+            color: @topMenuColorElements;
+            font-size: 14px;
+            padding-left: 12px;
+            padding-top: 8px;
+          }
+        }
+      }
+    }
+    input.form-control.input-sm {
+      border-radius: 30px;
+    }
 }

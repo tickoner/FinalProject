@@ -5,13 +5,19 @@ var gulp        = require('gulp'),
     concat      = require('gulp-concat'),
     uglify      = require('gulp-uglify'),
     addSrc      = require('gulp-add-src'),
-    rjo         = require('gulp-requirejs-optimize');
+    rjo         = require('gulp-requirejs-optimize'),
+    del         = require('del');
 //copy html files into dist
 gulp.task('html', function() {
   return gulp.src('src/html/*.html')
   .pipe(gulp.dest('dist'));
 });
-
+//delete dist before build
+gulp.task('del', function(cb) {
+  // You can use multiple globbing patterns as you would with `gulp.src`
+  del(['dist']);
+  cb();
+});
 //copy images into dist/img
 gulp.task('images', function() {
   return gulp.src('src/img/**/*.*')
@@ -91,7 +97,9 @@ gulp.task('watch', function() {
   })
   gulp.watch('src/styles/**/*.less', ['app-css']);
   gulp.watch('src/html/*.html', ['html']);
+  gulp.watch('src/scripts/*.js', ['app-js']);
   gulp.watch('dist/**/*.html').on('change', browserSync.reload);
+  gulp.watch('dist/js/app.min.js').on('change', browserSync.reload);
 });
 
 gulp.task('default',['html','images','fonts','material','app-css','vendor-css','vendor-js','app-js','data','watch']);

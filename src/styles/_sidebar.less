@@ -50,7 +50,16 @@
                 position: absolute;
                 top: 4px;
                 right: 5px;
-                z-index: 10;
+                z-index: 100;
+                -webkit-transition: background .15s ease-in-out;
+                -moz-transition: background .15s ease-in-out;
+                -ms-transition: background .15s ease-in-out;
+                -o-transition: background .15s ease-in-out;
+                transition: background .15s ease-in-out;
+
+                &:hover {
+                    background: darken( @nav-rose, 20%);
+                }
             }
         }
     }
