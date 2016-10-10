@@ -67,3 +67,12 @@ $('a.back-to-top').click(function() {
 	}, 700);
 	return false;
 });
+
+
+//show or hide map
+$(document).ready(function(){
+    $("#showmap-btn").click(function(){
+       event.preventDefault();
+        $(".map-cover").fadeToggle("slow", "linear");
+    });
+});

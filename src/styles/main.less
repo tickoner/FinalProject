@@ -19,6 +19,7 @@
 @import "_social-widget";
 @import "_twitter-widget";
 @import "_footer";
+@import "_contact";
 
 body {
     background-color: @body-bg;
@@ -56,6 +57,22 @@ html {
 .long-white-space {
     display: inline-block;
     width: 25px;
+}
+//background trick
+.main-content {
+    position: relative;
+
+    &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 1000%;
+        height: 1000%;
+        left: 100%;
+        top: 0;
+        background: #fff;
+        border-radius: 3px;
+    }
 }
 //for mobile devices
 @media (max-width: 768px) {
