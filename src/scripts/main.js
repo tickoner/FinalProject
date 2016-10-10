@@ -71,21 +71,21 @@ $('a.back-to-top').click(function() {
 
 //show or hide map
 $(document).ready(function(){
+  //load button
     $("#showmap-btn").click(function(){
        event.preventDefault();
         $(".map-cover").fadeToggle("slow", "linear");
     });
+      //load table from json
+    $.getJSON('data/users.json', function(data) {
+      $('#users-table').DataTable( {
+        data : data,
+          "columns": [
+              { "data": "Name" },
+              { "data": "Email" },
+              { "data": "Phone" },
+              { "data": "Country" }
+          ]
+      });
+    });
 });
-
-
-$(document).ready(function() {
-    $('#users-table').DataTable( {
-        "ajax": "data/users.json",
-        "columns": [
-            { "data": "Name" },
-            { "data": "Email" },
-            { "data": "Phone" },
-            { "data": "Country" }
-        ]
-    } );
-} );

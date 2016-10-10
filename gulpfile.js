@@ -28,11 +28,18 @@ gulp.task('fonts', function() {
   return gulp.src([
     'src/fonts/**/*.*',
     'src/vendor/bootstrap/dist/fonts/*.*',
-    'src/vendor/font-awesome/fonts/*.*',
-    'src/vendor/material-design-icons/iconfont/MaterialIcons-Regular.ttf'
+    'src/vendor/font-awesome/fonts/*.*'
   ])
   .pipe(gulp.dest('dist/fonts'));
 });
+
+gulp.task('material', function() {
+  return gulp.src([
+    'src/vendor/material-design-icons/iconfont/*.*',
+    '!src/vendor/material-design-icons/iconfont/material-icons.css'
+  ])
+  .pipe(gulp.dest('dist/css'));
+})
 //compile less into css
 gulp.task('app-css', function() {
   return gulp.src('src/styles/main.less')
@@ -48,7 +55,8 @@ gulp.task('vendor-css', function() {
     'src/vendor/font-awesome/css/font-awesome.css',
     'src/vendor/normalize-css/normalize.css',
     'src/vendor/material-design-icons/iconfont/material-icons.css',
-    'src/vendor/datatables.net-bs/css/dataTables.bootstrap.css'
+    'src/vendor/datatables.net-bs/css/dataTables.bootstrap.css',
+
   ])
   .pipe(nano())
   .pipe(concat('vendor.min.css'))
@@ -86,4 +94,4 @@ gulp.task('watch', function() {
   gulp.watch('dist/**/*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default',['html','images','fonts','app-css','vendor-css','vendor-js','app-js','data','watch']);
+gulp.task('default',['html','images','fonts','material','app-css','vendor-css','vendor-js','app-js','data','watch']);
