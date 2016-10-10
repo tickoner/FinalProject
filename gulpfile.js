@@ -17,6 +17,12 @@ gulp.task('images', function() {
   return gulp.src('src/img/**/*.*')
   .pipe(gulp.dest('dist/img'));
 });
+
+//copy data into dist/data
+gulp.task('data', function() {
+  return gulp.src('src/data/*.*')
+  .pipe(gulp.dest('dist/data'));
+});
 //copy fonts into dist/fonts
 gulp.task('fonts', function() {
   return gulp.src([
@@ -41,7 +47,8 @@ gulp.task('vendor-css', function() {
     'src/vendor/bootstrap/dist/css/bootstrap.css',
     'src/vendor/font-awesome/css/font-awesome.css',
     'src/vendor/normalize-css/normalize.css',
-    'src/vendor/material-design-icons/iconfont/material-icons.css'
+    'src/vendor/material-design-icons/iconfont/material-icons.css',
+    'src/vendor/datatables.net-bs/css/dataTables.bootstrap.css'
   ])
   .pipe(nano())
   .pipe(concat('vendor.min.css'))
@@ -51,7 +58,9 @@ gulp.task('vendor-css', function() {
 //copy vendor javascripts
 gulp.task('vendor-js', function() {
   return gulp.src([
-    'src/vendor/bootstrap/dist/js/bootstrap.js'
+    'src/vendor/bootstrap/dist/js/bootstrap.js',
+    'src/vendor/datatables.net/js/jquery.dataTables.js',
+    'src/vendor/datatables.net-bs/js/dataTables.bootstrap.js'
   ])
   .pipe(addSrc.prepend('src/vendor/jquery/dist/jquery.js')) //Insert content to the beginning of scripts elements
   .pipe(uglify())
@@ -77,4 +86,4 @@ gulp.task('watch', function() {
   gulp.watch('dist/**/*.html').on('change', browserSync.reload);
 });
 
-gulp.task('default',['html','images','fonts','app-css','vendor-css','vendor-js','app-js','images','watch']);
+gulp.task('default',['html','images','fonts','app-css','vendor-css','vendor-js','app-js','data','watch']);

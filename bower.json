@@ -20,6 +20,8 @@
     "bootstrap": "^3.3.7",
     "normalize-css": "normalize.css#^5.0.0",
     "font-awesome": "^4.6.3",
-    "material-design-icons": "^3.0.1"
+    "material-design-icons": "^3.0.1",
+    "datatables.net": "^1.10.12",
+    "datatables.net-bs": "^1.10.12"
   }
 }

@@ -76,3 +76,16 @@ $(document).ready(function(){
         $(".map-cover").fadeToggle("slow", "linear");
     });
 });
+
+
+$(document).ready(function() {
+    $('#users-table').DataTable( {
+        "ajax": "data/users.json",
+        "columns": [
+            { "data": "Name" },
+            { "data": "Email" },
+            { "data": "Phone" },
+            { "data": "Country" }
+        ]
+    } );
+} );
