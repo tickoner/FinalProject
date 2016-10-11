@@ -5,18 +5,11 @@ var gulp        = require('gulp'),
     concat      = require('gulp-concat'),
     uglify      = require('gulp-uglify'),
     addSrc      = require('gulp-add-src'),
-    rjo         = require('gulp-requirejs-optimize'),
-    del         = require('del');
+    rjo         = require('gulp-requirejs-optimize');
 //copy html files into dist
 gulp.task('html', function() {
   return gulp.src('src/html/*.html')
   .pipe(gulp.dest('dist'));
-});
-//delete dist before build
-gulp.task('del', function(cb) {
-  // You can use multiple globbing patterns as you would with `gulp.src`
-  del(['dist']);
-  cb();
 });
 //copy images into dist/img
 gulp.task('images', function() {
@@ -74,7 +67,8 @@ gulp.task('vendor-js', function() {
   return gulp.src([
     'src/vendor/bootstrap/dist/js/bootstrap.js',
     'src/vendor/datatables.net/js/jquery.dataTables.js',
-    'src/vendor/datatables.net-bs/js/dataTables.bootstrap.js'
+    'src/vendor/datatables.net-bs/js/dataTables.bootstrap.js',
+    'src/vendor/jquery-validation/dist/jquery.validate.js'
   ])
   .pipe(addSrc.prepend('src/vendor/jquery/dist/jquery.js')) //Insert content to the beginning of scripts elements
   .pipe(uglify())

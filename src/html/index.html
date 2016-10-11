@@ -745,18 +745,18 @@
                             <!-- sidebar subscribe -->
                             <div class="sidebar-subscribe">
                                 <h3 class="sidebar-heading"><a href="#">subscribe</a></h3>
-                                <form class="form-horizontal sidebar-subscribe-form">
+                                <form class="form-horizontal sidebar-subscribe-form" id="sidebar-subscribe-form">
                                     <div class="form-group">
                                         <label for="inputName-sidebar" class="col-sm-2 control-label">Name</label>
                                         <div class="col-xs-12">
-                                            <input type="text" class="form-control" id="inputName-sidebar" placeholder="Mykola">
+                                            <input type="text" name="name" class="form-control" id="inputName-sidebar" minlength= "2" placeholder="Mykola" required >
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label for="inputEmail-sidebar" class="col-sm-2 control-label">Email</label>
                                         <div class="col-xs-12">
-                                            <input type="email" class="form-control" id="inputEmail-sidebar" placeholder="email@address.com">
+                                            <input type="email" name="email" class="form-control" id="inputEmail-sidebar" placeholder="email@address.com" required >
                                         </div>
                                     </div>
 
@@ -1082,20 +1082,20 @@
                     <div class="col-xs-12 col-md-3">
                         <div class="news-letter-widget">
                             <h3 class="footer-up-head">news letter</h3>
-                            <form class="form-horizontal">
+                            <form class="form-horizontal" id="news-letter-widget">
                                 <div class="form-group">
                                     <div class="col-xs-12">
-                                        <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                        <input type="text" class="form-control" id="inputName" placeholder="Name" name="name">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-xs-12">
-                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="Email Address" name="email">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-xs-12">
-                                        <textarea class="form-control" rows="5" id="inputMessage" placeholder="Message"></textarea>
+                                        <textarea class="form-control" rows="5" id="inputMessage" placeholder="Write Your comment" name="comment"></textarea>
                                     </div>
                                 </div>
                                 <div class="form-group">

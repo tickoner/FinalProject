@@ -4,7 +4,20 @@
     padding-left: 0;
     padding-right: 0;
 }
-
+#news-letter-widget {
+  .error {
+    color: @nav-rose;
+    font-family: @MainFontBlog;
+    font-size: 14px;
+  }
+  label.error {
+    padding-top: 8px;
+  }
+  input.error:focus, #inputMessage.error:focus {
+    border-color: @nav-rose;
+    box-shadow:inset 0 1px 1px rgba(255,0,255,0.075),0 0 8px rgba(255,0,255,0.5);
+  }
+}
 #inputEmail,
 #inputName,
 textarea#inputMessage {

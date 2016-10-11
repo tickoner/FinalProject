@@ -114,7 +114,7 @@ h3.sidebar-heading {
     border-top: none;
 }
 
-form.sidebar-subscribe-form {
+form#sidebar-subscribe-form {
     .form-group {
         margin-bottom: 10px;
 
@@ -125,6 +125,18 @@ form.sidebar-subscribe-form {
             padding-top: 0;
             float: left;
         }
+    }
+    .error {
+      color: @nav-rose;
+      font-family: @MainFontBlog;
+      font-size: 14px;
+    }
+    label.error {
+      padding-top: 8px;
+    }
+    input.error:focus {
+      border-color: @nav-rose;
+      box-shadow:inset 0 1px 1px rgba(255,0,255,0.075),0 0 8px rgba(255,0,255,0.5);
     }
 }
 
