@@ -75,6 +75,13 @@ html {
         border-radius: 3px;
     }
 }
+.jGrowl-notification {
+  background-color: @button-color;
+  color:@nav-letters-color;
+  font-size: 14px;
+  font-family: @MainFontRegular, Arial, sans-serif;
+  text-transform: capitalize;
+}
 //for mobile devices
 @media (max-width: 768px) {
     #myCarousel {
@@ -201,4 +208,12 @@ html {
     .wrapper {
         font-size: 90%;
     }
+}
+@media (max-width: 1199px) {
+  .contact-page, .users-page, .login-page  {
+    li.dropdown ul.dropdown-menu {
+      background-color: rgba(48, 48, 48, 0.59);
+      font-size: 14px;
+    }
+  }
 }

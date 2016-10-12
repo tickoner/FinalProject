@@ -120,8 +120,20 @@ $(document).ready(function() {
             email: {
                 required: "Please write Your e-mail address",
             },
-
-        }
+        },
+        submitHandler: function() {
+          $.jGrowl("thank you for subscribing!");
+        },
+      //   success: {
+      //       callback: function () {
+      //           if ($("#sidebar-subscribe-form").valid()) {
+      //       var form = $("#sidebar-subscribe-form");
+      //       form.submit();
+      //       } else {
+      //       return false;
+      //       }
+      //     }
+      // }
     });
 
     $('#news-letter-widget').validate({
@@ -137,10 +149,10 @@ $(document).ready(function() {
               required: true,
               email: true,
           },
-          comment: {
+          password: {
               required: true,
-              minlength: 10,
-              maxlength: 300,
+              minlength: 6,
+              maxlength: 16,
           },
       },
 
@@ -161,6 +173,65 @@ $(document).ready(function() {
             minlength: "Comment must be at least 10 characters",
             maxlength: "Comment is too long",
           }
+      },
+      submitHandler: function() {
+        $.jGrowl("thank you for subscribing!");
+      }
+    });
+
+    //sign-in  form validate
+    $('#form-signin').validate({
+      rules: {
+          name: {
+              required: true,
+              minlength: 3,
+              maxlength: 20,
+          },
+
+          email: {
+              required: true,
+              email: true,
+          },
+          password: {
+              required: true,
+              minlength: 6,
+              maxlength: 16,
+          },
+          password2: {
+              required: true,
+              minlength: 6,
+              maxlength: 16,
+              equalTo: '#inputPasswordSignIn',
+          },
+      },
+
+      messages: {
+
+          name: {
+              required: "Please Tell Me Your Name",
+              minlength: "Name must be at least 3 characters",
+              maxlength: "Name is too long",
+          },
+
+          email: {
+              required: "Please write Your e-mail address",
+              email: "Your email address is invalid"
+          },
+          password: {
+            required: "Please write Your e-mail address",
+            minlength: "Password must be at least 6 characters",
+            maxlength: "Password must be between 6 and 16 characters",
+          },
+          password2: {
+            required: "Please write Your e-mail address",
+            minlength: "Password must be at least 6 characters",
+            maxlength: "Password must be between 6 and 16 characters",
+            equalTo : "This password does not match that entered in the password field, please try again",
+          },
+
+      },
+      submitHandler: function() {
+        $.jGrowl("Successful login!");
       }
     });
 

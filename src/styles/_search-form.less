@@ -11,9 +11,16 @@
     background: @footerBlack;
     border-right: none;
     border: 1px solid @topMenuColorElements;
-    font-family: @MainFontBlog;
+    font-family: @MainFontBlog, Arial, sans-serif;
     font-size: 14px;
     color: @topMenuColorElements;
+    &:focus {
+      border-right: 0;
+      box-shadow: none;
+    }
+}
+.input-group-btn:focus {
+  outline: none;
 }
 
 .search-btn {

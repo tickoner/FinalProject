@@ -55,6 +55,7 @@ gulp.task('vendor-css', function() {
     'src/vendor/normalize-css/normalize.css',
     'src/vendor/material-design-icons/iconfont/material-icons.css',
     'src/vendor/datatables.net-bs/css/dataTables.bootstrap.css',
+    'src/vendor/jGrowl/jquery.jgrowl.css'
 
   ])
   .pipe(nano())
@@ -68,7 +69,8 @@ gulp.task('vendor-js', function() {
     'src/vendor/bootstrap/dist/js/bootstrap.js',
     'src/vendor/datatables.net/js/jquery.dataTables.js',
     'src/vendor/datatables.net-bs/js/dataTables.bootstrap.js',
-    'src/vendor/jquery-validation/dist/jquery.validate.js'
+    'src/vendor/jquery-validation/dist/jquery.validate.js',
+    'src/vendor/jGrowl/jquery.jgrowl.js'
   ])
   .pipe(addSrc.prepend('src/vendor/jquery/dist/jquery.js')) //Insert content to the beginning of scripts elements
   .pipe(uglify())

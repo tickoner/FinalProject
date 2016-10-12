@@ -5,9 +5,28 @@
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     padding: 50px 15px 15px;
     background: @nav-letters-color;
+    h3 {
+      font-family: @MainFontRegular;
+      font-size: 16px;
+      color: @text-black;
+      text-transform: capitalize;
+    }
+    .error {
+      color: @nav-rose;
+      font-family: @MainFontBlog, Arial, sans-serif;
+      font-size: 14px;
+    }
+    label.error {
+      padding-top: 8px;
+    }
+    input.error:focus {
+      border-color: @nav-rose;
+      box-shadow:inset 0 1px 1px rgba(255,0,255,0.075),0 0 8px rgba(255,0,255,0.5);
+    }
   }
 
-  #inputNameSignIn,#inputEmailSignIn {
+  #inputNameSignIn,#inputEmailSignIn,
+  #inputPasswordSignIn, #inputPassword2SignIn {
     border-radius: 30px 30px 30px 30px;
     background-color: @grey-lines-color;
     font-family: @MainFontBlog;
@@ -31,7 +50,7 @@
     background-color: @button-color;
     border: none;
     border-radius: 22px;
-    font-family: @MainFontRegular;
+    font-family: @MainFontRegular, Arial, sans-serif;
     font-size: 24px;
     font-variant: small-caps;
     box-shadow: 0 17px 24px 0 rgba(48, 63, 159, 0.2);
